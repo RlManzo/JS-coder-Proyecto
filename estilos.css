@@ -8,11 +8,11 @@
 }
 .carritoEstilo {
    position: absolute;
-   margin-left: 957px;
+   margin-left: 990px;
    margin-bottom: 600px;
-   margin-top: -60px;
-   background-color: aliceblue;
-   border-radius: 20px;
+   margin-top: -50px;
+   background-color:  radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   border-radius: 50px;
    padding-left: 30px;
    padding-right: 35px;
 }
@@ -27,6 +27,7 @@
 }
 
 .img1{
+   
    border-radius: 10px;
    transition: all .2s ease-in-out;
    padding-bottom: 70px;
@@ -57,15 +58,13 @@
                
                font-weight: bolder;
                width: 100vw;
-               background:  radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+               background:  radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
                padding-bottom: 30px;
                padding-top: 20px;
                color:  #FAF0Ca;
                text-shadow: 0 0 5px black;
-               display: flex;
-               justify-content: center;
-               padding-left: 0px;
-               margin-top: 26px;
+               padding-left: 600px;
+               margin-top: -24px;
                margin-bottom: -10px;
                margin-left: -120px;
            }
@@ -73,4 +72,70 @@
 .cardTamaño{
    width: 50px;
    height: 50px;
+}
+
+.cardImgModal{
+   background-color: #f4d35e;
+   border-radius: 10px;
+   transition: all .2s ease-in-out;
+   padding-bottom: 70px;
+   margin-right: 20px;
+   margin-bottom: 20px; 
+}
+
+.formEstilos{
+   position: absolute;
+   padding-right: 0px;
+   padding-left: 11px;
+   padding-top: 0px;
+   padding-bottom: 2px;
+   margin-top: -46px;
+   border-radius: 15px;
+   margin-left: 750px;
+
+}
+
+.imgBuscador{
+   width: 50px;
+   height: 50px;
+   margin-top: 15px;
+   margin-right: 5px;
+}
+
+
+.buscadorContainer{
+   position: absolute;
+   padding-right: 0px;
+   padding-left: 11px;
+   padding-top: 0px;
+   padding-bottom: 25px;
+   margin-top: -13px;
+   margin-left: 830px;
+}
+
+.pComprarBuscador{
+   margin-top: -35px;
+   margin-left: 80px;
+   font-size: 12px;
+   height: 50px;
+   width: 100px;
+   background-color: blue;
+}
+
+.listStyle{
+   list-style-type: none;
+   margin-bottom: 40px;
+}
+
+.navBarEstilos{
+   background-color: floralwhite;
+   margin-left: -120px;
+   margin-right: -130px;
+   padding-left: 100px;
+}
+
+.logoEstilos{
+   width: 50px;
+   height: 50px;
+   margin-bottom: -5px;
 }
