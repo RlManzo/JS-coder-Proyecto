@@ -217,16 +217,25 @@ const productosJson = "json/productos.json";
                     
                     <li class="listStyle">
                         <img src=${producto.img} class="imgBuscador" alt="..."<h5 class="textoBuscador" >${producto.nombre}</h5>
-                        <p></p>
-                        <button class="btn btn-primary pComprar pComprarBuscador" id= botton${producto.id}>Comprar $${producto.precio}</button>   
-                    </li>
+                        <p></p></li>
+                        <button class="btn btn-primary pComprar pComprarBuscador" id= botton${producto.id}>Comprar</button>   
+                    
                     
                     `
                     busqueda.style.opacity = 1;
                   
                     
-                    const botton = document.getElementById(`botton${producto.id}`)
-                    botton.addEventListener("click", alertas)
+                    let botton = document.getElementById(`botton${producto.id}`);
+                    botton.addEventListener("click", () => {
+                        agregamosAlCarrito(producto.id)
+                        Swal.fire({
+                            title: "Eliminaste los productos!",
+                            text: "¡Podes volver a comprar!",
+                            icon: "warning",
+                            button: "OK",
+                        
+                        });
+                    } )
                   
                  }
                    
@@ -247,7 +256,7 @@ const productosJson = "json/productos.json";
             const  productoEnCarrito = carrito.find (Producto => Producto.id === id);
             if(productoEnCarrito){
                 productoEnCarrito.cantidad++;
-                console.log("hola");
+                
             } else{
                 const producto = arrayCatalogo.find(Producto => Producto.id === id);
                 carrito.push(producto);
@@ -255,14 +264,4 @@ const productosJson = "json/productos.json";
                 
             }
             calcularTotal();
-        }
-        
-        const alertas = () =>{
-            Swal.fire({
-                title: "Eliminaste los productos!",
-                text: "¡Podes volver a comprar!",
-                icon: "warning",
-                button: "OK",
-            
-            });
         }
