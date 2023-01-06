@@ -12,7 +12,7 @@ class Producto{
 
 const producto1 = new Producto(1, "Remera Lisa (Talle unico M)" , 1500, "img/muestra-jaa.png");
 const producto2 = new Producto(2, "Remera Dignidad  (Talle unico M", 1500, "img/muestra-j10.png");
-const producto3 = new Producto(3, "Homero Maggio (Talle unico M)", 1500, "img/muestra-bb.png");
+const producto3 = new Producto(3, "Homero 8Maggio (Talle unico M)", 1500, "img/muestra-bb.png");
 const producto4 = new Producto(4, "Remera rafa (Talle unico M)", 1500, "img/muestra-fa.png");
 const producto5 = new Producto(5, "Almohadon Rocklets", 1300, "img/Cabsha.png");
 const producto6 = new Producto(6, "Almohadon Cabsha", 1300, "img/Rocklets.png");
@@ -43,7 +43,7 @@ const mostrarProductos = () => {
         card.classList.add( "col-xl-3", "col-md-6", "col-xs-12");
         card.innerHTML =  `
                           <div class="img1">
-                          <img src="${Producto.img}"  class="imgProductos" alt="${Producto.nombre}">
+                          <img src="${Producto.img}" class="imgProductos" alt="${Producto.nombre}">
                           <div>
                           <h5 class="card-title text-center">${Producto.nombre}</h5>
                           <p class="text-center h6">$${Producto.precio}</p>
@@ -71,18 +71,19 @@ const mostrarProductos = () => {
     })
 } 
 
+
 const agregarAlCarrito = (id) => {
-    const  productoEnCarrito = carrito.find (Producto => Producto.id === id);
+    const productoEnCarrito = carrito.find(Producto => Producto.id === id);
     if(productoEnCarrito){
         productoEnCarrito.cantidad++;
-    } else{
+    } else {
         const producto = arrayCatalogo.find(Producto => Producto.id === id);
         carrito.push(producto);
         localStorage.setItem("carrito", JSON.stringify(carrito));
         
     }
     calcularTotal();
-}
+} 
 
 mostrarProductos();
 
@@ -227,7 +228,7 @@ const productosJson = "json/productos.json";
                     
                     let botton = document.getElementById(`botton${producto.id}`);
                     botton.addEventListener("click", () => {
-                        agregamosAlCarrito(producto.id)
+                        
                         Swal.fire({
                             title: "Eliminaste los productos!",
                             text: "¡Podes volver a comprar!",
@@ -241,7 +242,7 @@ const productosJson = "json/productos.json";
                    
     
                
-               if( resultado.innerHTML === '' ){
+               if( resultado.innerHTML == '' ){
                 
                  resultado.innerHTML = `<li>Producto no encontrado</li>`;
             }
@@ -252,16 +253,4 @@ const productosJson = "json/productos.json";
     
         buscador.addEventListener("keyup", filtrar)
         
-        const agregamosAlCarrito = (id) => {
-            const  productoEnCarrito = carrito.find (Producto => Producto.id === id);
-            if(productoEnCarrito){
-                productoEnCarrito.cantidad++;
-                
-            } else{
-                const producto = arrayCatalogo.find(Producto => Producto.id === id);
-                carrito.push(producto);
-                localStorage.setItem("carrito", JSON.stringify(carrito));
-                
-            }
-            calcularTotal();
-        }
+       
