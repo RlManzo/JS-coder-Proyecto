@@ -30,7 +30,7 @@
    
    border-radius: 10px;
    transition: all .2s ease-in-out;
-   padding-bottom: 70px;
+   padding-bottom: 30px;
    margin-right: 20px;
    background-color: white;
    margin-bottom: 20px;         
@@ -63,7 +63,7 @@
                padding-top: 20px;
                color:  #FAF0Ca;
                text-shadow: 0 0 5px black;
-               padding-left: 600px;
+               padding-left: 530px;
                margin-top: -24px;
                margin-bottom: -10px;
                margin-left: -120px;
@@ -73,7 +73,13 @@
    width: 50px;
    height: 50px;
 }
-
+.modalTitulo{
+   padding-left: 170px;
+   font-weight: bold;
+}
+.modalTotalTitulo{
+   padding-left: 20px;
+}
 .cardImgModal{
    background-color: #f4d35e;
    border-radius: 10px;
@@ -149,11 +155,29 @@
 }
 
 .accordion-button::after{
-   margin-right: 600px;
+   margin-right: 620px;
+   margin-top: 10px;
    
 }
 .accordion-button{
+   
+   position: unset;
    padding-left: 600px;
-   font-size: large;
+   padding-bottom: 20px;
+   font-size: 25px;
    font-weight: bold;
+}
+
+.imgDescuento{
+   color: aliceblue;
+   border-radius: 10px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+background: linear-gradient(to right, #2a5298, #1e3c72); 
+    }
+.btn-close{
+   position: absolute;
+   margin-left: 250px;
+   
 }

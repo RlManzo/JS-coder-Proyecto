@@ -1,11 +1,7 @@
 [
-    {"nombre" :"Remera Lisa", "precio":1500, "img":"img/muestra-jaa.png", "id":1},
-    {"nombre" : "Remera Dignidad", "precio":1500, "img":"img/muestra-j10.png","id":2},
-    {"nombre" :"Homero Maggio","precio": 1500, "img":"img/muestra-bb.png","id":3},
-    {"nombre" :"Remera rafa","precio": 1500,"img": "img/muestra-fa.png","id":4},
-    {"nombre" :"Almohadon Rocklets", "precio":1300,"img": "img/Rocklets.png","id":5},
-    {"nombre" :"Taza Signos","precio": 900, "img":"img/tazaSignos1.jpg","id":6},
-    {"nombre" :"Taza Signos 2", "precio":900,"img": "img/tazaSignos2.jpg","id":7},
-    {"nombre" :"Taza Spiderman", "precio":750, "img":"img/tazaSpiderman.png","id":8},
-    {"nombre" :"Taza Marvel","precio": 750, "img":"img/tazaMarvel.png","id":9}
+    {"nombre" :"Remera Lisa Looser", "precio":1300, "img":"img/muestra-f.png", "id":17, "cantidad":1},
+    {"nombre" : "Mate listo", "precio":1500, "img":"img/M07.jpg","id":18, "cantidad":1},
+    {"nombre" :"Remera Navidad","precio": 1300, "img":"img/m6.jpg","id":19,"cantidad":1},
+    {"nombre" :"Taza Unicornios","precio": 800,"img": "img/DIA DEL NIÑO VARIEDAD-38.png","id":20,"cantidad":1}
+
 ]
